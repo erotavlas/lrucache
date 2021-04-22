@@ -35,6 +35,9 @@
   ```
   
   Operations available
+  NOTE:   
+  `key` should be any a unique identifier of type such as string or int 
+  `value` can be any object or custom type
   
   ##### put(key, value)
   Put an item into the cache.  
@@ -66,8 +69,5 @@
   ```
   lru.reset()
   ```
-  
-  `key` should be any a unique identifier of type such as string or int
-  
-  `value` can be any object or custom type
+
   
