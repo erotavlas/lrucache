@@ -1,3 +1,5 @@
+  ### Description
+  
   Least Recently Used (LRU) Cache Implementation in Python
   The LRU Cache is initialized with a maximum size.  During use, if the
   max size is exceeded when adding new keys, the least recently used
@@ -14,13 +16,13 @@
   recently used item is at the head of the list, and the most recently used
   item is at the tail of the list.
   
-  #### Requirements
+  ### Requirements
   
   Python 3 environment
   
   For running unit tests install `pytest` package to the environment.
   
-  #### Usage
+  ### Usage
   
   Import into your project with 
   
@@ -42,7 +44,7 @@
   
   `value` can be any object or custom type
   
-  ##### put(key, value)
+  #### put(key, value)
   Put an item into the cache.  
   If item already exists, item is made most recently used.
   If item doesn't exists and there is space available in the cache, item is appended as
@@ -52,7 +54,7 @@
   lru.put(key, value)
   ```
   
-  ##### get(key) -> value
+  #### get(key) -> value
   Gets an item from the cache by key. 
   If the key doesn't exist in the cache, -1 is returned.
   If the item already exists in the cache, the item is returned and it is made most recently used.
@@ -60,14 +62,14 @@
   value = lru.get(key)
   ```
   
-  ##### delete(key)
+  #### delete(key)
   Removes an item from the cache by key.  
   If key doesn't exist in the cache, no action is performed.
   ```
   lru.delete(key)
   ```
   
-  ##### reset()
+  #### reset()
   Clears the cache.  All items will be removed.
   ```
   lru.reset()
