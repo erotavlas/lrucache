@@ -29,7 +29,7 @@ def test_put_2():
 
     lru.put(0, 0)
 
-    assert lru._printForward() == [1,2, 3, 4, 00] 
+    assert lru._printForward() == [1, 2, 3, 4, 0] 
 
 
 def test_put_3():

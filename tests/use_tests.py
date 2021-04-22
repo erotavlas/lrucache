@@ -64,3 +64,31 @@ def test_get_3():
     lru.get(2)
 
     assert lru._printForward() == ['1', '3', '2']
+
+def test_get_4():
+    """
+    Getting a key that doesn't exists returns -1
+    """
+    lru = LRUCache(5)
+
+    lru.put(1, str(1))
+    lru.put(2, str(2))
+    lru.put(3, str(3))
+
+    result = lru.get(10)
+
+    assert result == -1
+
+def test_get_5():
+    """
+    Getting item by key returns the value of the key
+    """
+    lru = LRUCache(5)
+
+    lru.put(1, str(1))
+    lru.put(2, str(2))
+    lru.put(3, str(3))
+
+    value = lru.get(2)
+
+    assert value == '2'
