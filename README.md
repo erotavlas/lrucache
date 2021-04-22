@@ -68,5 +68,6 @@
   ```
   
   `key` should be any a unique identifier of type such as string or int
+  
   `value` can be any object or custom type
   
