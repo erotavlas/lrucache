@@ -69,15 +69,6 @@ def test_put_6():
 
     assert lru.currentsize == 1
 
-def test_put_7():
-    """Put same item over and over, max size 10 => size == 1"""
-    lru = LRUCache(10)
-
-    for i in range(0,10):
-        lru.put(0, str(0))
-
-    assert lru.currentsize == 1
-
 def test_reset():
     """Put some items in cache, then clear it => size == 0"""
     lru = LRUCache(10)
