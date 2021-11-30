@@ -3,9 +3,9 @@ import lru_cache.Node as Node
 class LRUCache:
     """
     Least Recently Used (LRU) Cache Implementation in Python
-    The LRU Cache is initialized with a macimum size.  During use, if the
+    The LRU Cache is initialized with a maximum size.  During use, if the
     max size is exceeded when adding new keys, the least recently used
-    item is discarded form the cache to make room for the new item.
+    item is discarded from the cache to make room for the new item.
 
     Assumptions:
     - Minimum size = 1
