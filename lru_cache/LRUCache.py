@@ -71,8 +71,6 @@ class LRUCache:
     def delete(self, key):
         """
         Delete a key
-        NOTE: The name of this function was changed to 'delete()' from the name provided in the instructions
-        because of conflict with python keyword del
         """
         if key in self.dictionary:
             node = self.dictionary.pop(key)
